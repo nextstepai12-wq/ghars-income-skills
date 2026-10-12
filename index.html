@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ورشة: كيف أطوّر مهارات أحصل منها على دخل جانبي؟ | NextStep AI × غرس</title>
+<meta name="description" content="لقاء مجاني عبر الإنترنت الأربعاء 14/10/2026 مع د. سارة اللولو — سجّل حضورك وانضم لمجتمع NextStep AI.">
+<meta name="theme-color" content="#FFFFFF">
+<meta property="og:title" content="كيف أطوّر مهارات أحصل منها على دخل جانبي؟">
+<meta property="og:description" content="لقاء مجاني — الأربعاء 14/10/2026 — 7:00 مساءً بتوقيت غزة">
+<link rel="icon" type="image/png" href="assets/n-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* هوية NextStep AI */
+  --navy:#0B1220; --blue:#2563EB; --cyan:#06B6D4; --emerald:#10B981; --gray:#F8FAFC;
+  --text:#0B1220; --muted:#51607A; --line:#E3E9F3; --white:#FFFFFF;
+  --grad:linear-gradient(135deg,#2563EB 0%,#06B6D4 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope','Tajawal',system-ui,sans-serif;background:#fff;color:var(--text);line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px;position:relative;z-index:1}
+#dots{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.no-canvas body{background-image:radial-gradient(rgba(37,99,235,.14) 1.4px,transparent 1.5px);background-size:34px 34px}
+#bar{position:fixed;top:0;right:0;height:4px;width:0;background:var(--grad);z-index:100;transition:width .1s}
+
+/* header */
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;direction:ltr;letter-spacing:-.3px}
+.brand img{height:46px;width:auto}
+.brand b{color:var(--cyan)}
+.pill{font-size:14px;font-weight:600;color:var(--blue);border:1px solid #CFE0FF;padding:7px 16px;border-radius:999px;background:rgba(255,255,255,.8);backdrop-filter:blur(6px)}
+@media (max-width:640px){.pill{display:none}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;padding:26px 0 40px}
+.tag{display:inline-flex;align-items:center;gap:8px;background:#EEF4FF;color:var(--blue);padding:7px 16px;border-radius:999px;font-size:15px;font-weight:700;margin-bottom:18px}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--emerald);box-shadow:0 0 0 0 rgba(16,185,129,.6);animation:ping 1.8s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 10px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+h1{font-size:clamp(34px,5.2vw,58px);line-height:1.22;font-weight:800;margin-bottom:16px;letter-spacing:-.5px}
+h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:19px;color:var(--muted);max-width:540px;margin-bottom:26px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;cursor:pointer;font-family:inherit;font-weight:800;font-size:18px;padding:15px 30px;border-radius:14px;min-height:52px;transition:transform .2s,box-shadow .25s;will-change:transform}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 12px 28px rgba(37,99,235,.32)}
+.btn-primary:hover{box-shadow:0 16px 36px rgba(37,99,235,.42)}
+.btn-ghost{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn[disabled]{opacity:.65;cursor:wait}
+.count{display:flex;gap:10px;margin-top:28px}
+.count div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:10px 14px;text-align:center;min-width:76px;box-shadow:0 6px 18px rgba(11,18,32,.05)}
+.count b{display:block;font-size:28px;font-weight:800;line-height:1.2;color:var(--navy);font-variant-numeric:tabular-nums}
+.count span{font-size:13px;color:var(--muted)}
+
+/* 3D scene */
+.scene{perspective:1200px;position:relative;display:flex;justify-content:center}
+.tilt{transform-style:preserve-3d;transition:transform .18s ease-out;will-change:transform;position:relative;width:min(100%,560px)}
+.tilt .art{display:block;width:100%;height:auto;transform:translateZ(0);filter:drop-shadow(0 30px 40px rgba(37,99,235,.18))}
+.chip{position:absolute;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:16px;padding:10px 16px;font-weight:700;font-size:15px;box-shadow:0 14px 30px rgba(11,18,32,.12);backdrop-filter:blur(8px);white-space:nowrap}
+.chip svg{color:var(--blue)}
+.chip.c1{top:8%;right:-2%;transform:translateZ(90px);animation:fl 5s ease-in-out infinite}
+.chip.c2{top:46%;left:-4%;transform:translateZ(70px);animation:fl 6s ease-in-out -2s infinite}
+.chip.c3{bottom:12%;right:2%;transform:translateZ(110px);animation:fl 5.5s ease-in-out -1s infinite}
+@keyframes fl{50%{translate:0 -12px}}
+@media (max-width:860px){.chip.c1{right:2%}.chip.c2{left:0}}
+
+/* sections */
+section{padding:50px 0}
+.alt{background:linear-gradient(180deg,rgba(248,250,252,.92),rgba(248,250,252,.92))}
+h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;margin-bottom:10px;letter-spacing:-.3px}
+.sub{color:var(--muted);font-size:18px;margin-bottom:28px;max-width:640px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;perspective:1000px}
+.card{position:relative;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;transition:transform .2s ease-out,box-shadow .3s,border-color .3s;transform-style:preserve-3d;box-shadow:0 8px 24px rgba(11,18,32,.04)}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(320px circle at var(--mx,50%) var(--my,0%),rgba(37,99,235,.13),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover{border-color:#BBD0FF;box-shadow:0 22px 44px rgba(37,99,235,.14)}
+.card:hover::before{opacity:1}
+.card .ic{width:54px;height:54px;border-radius:16px;background:#EEF4FF;color:var(--blue);display:flex;align-items:center;justify-content:center;margin-bottom:16px;transition:transform .3s,background .3s,color .3s}
+.card:hover .ic{background:var(--grad);color:#fff;transform:translateZ(30px) rotate(-6deg) scale(1.08)}
+.card h3{font-size:21px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:16px}
+
+.info{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}
+.tile{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px 22px;transition:transform .25s,border-color .25s}
+.tile:hover{transform:translateY(-5px);border-color:#BBD0FF}
+.tile small{display:block;color:var(--muted);font-size:14px;font-weight:600}
+.tile b{display:block;font-size:21px;font-weight:800;line-height:1.35;margin-top:2px}
+
+.speaker{display:flex;gap:22px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 10px 30px rgba(11,18,32,.05)}
+.avatar{flex:none;width:86px;height:86px;border-radius:50%;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:800;box-shadow:0 10px 24px rgba(37,99,235,.3)}
+.speaker h3{font-size:26px}
+.speaker p{color:var(--muted)}
+
+/* register */
+.reg{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start}
+.ticket-scene{perspective:1100px;position:sticky;top:30px}
+.ticket{border-radius:26px;background:var(--navy);color:#fff;padding:28px;position:relative;overflow:hidden;box-shadow:0 36px 70px rgba(11,18,32,.35);transform-style:preserve-3d;transition:transform .18s ease-out}
+.ticket::after{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--tx,80%) var(--ty,0%),rgba(6,182,212,.35),transparent 60%);pointer-events:none}
+.ticket .tk-top{display:flex;align-items:center;justify-content:space-between;direction:ltr;margin-bottom:18px}
+.ticket .tk-top img{height:34px}
+.ticket .tk-top span{font-size:13px;color:#8FA3C8;font-weight:600;letter-spacing:.5px}
+.tk-label{font-size:13px;color:#8FA3C8;font-weight:600}
+.tk-name{font-size:26px;font-weight:800;min-height:44px;line-height:1.4;margin-bottom:6px;word-break:break-word;color:#fff}
+.tk-name.ph{color:#5E7099}
+.tk-title{font-size:17px;color:#CFE0FF;margin:10px 0 16px;line-height:1.5}
+.tk-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px;border-top:1px dashed rgba(255,255,255,.25);padding-top:16px;font-weight:700;font-size:15px}
+.tk-meta span{display:block;font-size:12px;color:#8FA3C8;font-weight:600}
+.stamp{position:absolute;left:22px;bottom:20px;border:3px solid var(--emerald);color:var(--emerald);font-weight:800;border-radius:12px;padding:4px 14px;font-size:18px;transform:rotate(-12deg) scale(0);opacity:0;transition:.5s cubic-bezier(.2,1.6,.4,1)}
+.ticket.done .stamp{transform:rotate(-12deg) scale(1);opacity:1}
+
+.form-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:32px;box-shadow:0 30px 70px rgba(11,18,32,.09)}
+.form-card h2{font-size:30px}
+.prog{height:8px;background:#EEF2F8;border-radius:99px;overflow:hidden;margin:6px 0 4px}
+.prog i{display:block;height:100%;width:0;background:var(--grad);border-radius:99px;transition:width .35s}
+.prog-t{font-size:14px;color:var(--muted);margin-bottom:20px}
+.field{margin-bottom:14px}
+label{display:block;font-weight:700;margin-bottom:6px;font-size:16px}
+label small{color:var(--muted);font-weight:500}
+input,select{width:100%;font-family:inherit;font-size:17px;color:var(--text);background:var(--gray);border:1.5px solid var(--line);border-radius:12px;padding:13px 16px;min-height:52px;outline:none;transition:border-color .2s,box-shadow .2s,background .2s}
+input:focus,select:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 4px rgba(37,99,235,.14)}
+input.bad,select.bad{border-color:#E5484D}
+.err{color:#C93A3F;font-size:14px;min-height:20px;margin-top:3px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.check{display:flex;gap:12px;align-items:flex-start;margin:6px 0 14px;font-size:15.5px;cursor:pointer}
+.check input{width:22px;height:22px;min-height:0;margin-top:4px;accent-color:var(--blue);flex:none}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;width:0}
+.form-msg{text-align:center;color:#C93A3F;margin-top:12px;min-height:24px}
+.success{display:none;text-align:center;padding:10px 0}
+.ok{width:88px;height:88px;margin:0 auto 18px;border-radius:50%;background:var(--emerald);color:#fff;display:flex;align-items:center;justify-content:center;animation:pop .6s cubic-bezier(.2,1.6,.4,1);box-shadow:0 12px 30px rgba(16,185,129,.4)}
+@keyframes pop{from{transform:scale(0) rotate(-90deg)}to{transform:scale(1) rotate(0)}}
+.success .sub{margin-inline:auto}
+.btn-wa{background:#25D366;color:#06210F;width:100%;box-shadow:0 12px 28px rgba(37,211,102,.32);margin-top:8px}
+.succ-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.note{color:var(--muted);font-size:15px;margin-top:14px}
+
+/* founder */
+.founder{margin-top:20px;background:var(--navy);color:#fff;border-radius:30px;padding:36px;display:flex;align-items:center;gap:26px;position:relative;overflow:hidden}
+.founder::before{content:"";position:absolute;width:420px;height:420px;left:-120px;top:-180px;background:radial-gradient(circle,rgba(37,99,235,.55),transparent 65%)}
+.founder::after{content:"";position:absolute;width:360px;height:360px;right:-100px;bottom:-200px;background:radial-gradient(circle,rgba(6,182,212,.4),transparent 65%)}
+.founder > *{position:relative;z-index:1}
+.f-icon{flex:none;width:96px;height:96px;border-radius:26px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.35)}
+.f-icon img{width:62px;height:auto}
+.f-name{font-size:28px;font-weight:800;line-height:1.3}
+.f-role{color:#9FB6E6;font-size:18px;margin-top:2px}
+.f-role b{color:var(--cyan);font-family:'Manrope',sans-serif}
+.f-slogan{margin-top:6px;font-size:15px;color:#7F93BD;direction:ltr;text-align:right;font-family:'Manrope',sans-serif}
+.f-link{margin-inline-start:auto;display:inline-flex;gap:8px;align-items:center;font-weight:700;font-size:15px;border:1px solid rgba(255,255,255,.25);padding:10px 18px;border-radius:12px;transition:background .2s}
+.f-link:hover{background:rgba(255,255,255,.1)}
+footer{padding:26px 0 90px;text-align:center;color:var(--muted);font-size:15px}
+footer img{height:44px;display:block;margin:0 auto 10px}
+
+#sticky{position:fixed;bottom:14px;left:14px;right:14px;z-index:60;display:none;transform:translateY(120%);transition:transform .35s}
+#sticky.show{transform:none}
+#sticky .btn{width:100%;box-shadow:0 14px 34px rgba(37,99,235,.45)}
+#cv{position:fixed;inset:0;pointer-events:none;z-index:200}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;padding-top:6px}
+  .scene{order:-1;margin-bottom:6px}
+  .grid3{grid-template-columns:1fr}
+  .info{grid-template-columns:1fr 1fr}
+  .reg{grid-template-columns:1fr}
+  .ticket-scene{position:static}
+  .two{grid-template-columns:1fr}
+  .speaker{flex-direction:column;text-align:center}
+  .founder{flex-direction:column;text-align:center;padding:30px 22px}
+  .f-link{margin:0}
+  .f-slogan{text-align:center}
+  .form-card{padding:24px 18px}
+  .count div{min-width:0;flex:1}
+  #sticky{display:block}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<canvas id="dots" aria-hidden="true"></canvas>
+<canvas id="cv" aria-hidden="true"></canvas>
+
+<div class="wrap">
+<header>
+  <a class="brand" href="#top" aria-label="NextStep AI">
+    <img src="assets/n-icon.png" alt="">
+    <span>NextStep <b>AI</b></span>
+  </a>
+  <span class="pill">بالشراكة مع مبادرة غرس</span>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="reveal">
+    <span class="tag"><i></i>اللقاء التعليمي السادس عشر ضمن غرس</span>
+    <h1>كيف أطوّر مهارات أحصل منها على <em>دخل جانبي؟</em></h1>
+    <p class="lead">دردشة مفتوحة حول أهمية اكتساب مهارات موازية لتخصصك وبناء مصدر دخل جانبي في ظل التحديات الراهنة. لقاء مجاني عبر الإنترنت، مفتوح لطلبة وخريجي طب الأسنان وطلبة مجتمع NextStep AI.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary mag" href="#register">سجّل حضورك الآن</a>
+      <a class="btn btn-ghost" href="#details">تفاصيل اللقاء</a>
+    </div>
+    <div class="count" aria-label="العد التنازلي لموعد اللقاء">
+      <div><b id="cd">--</b><span>يوم</span></div>
+      <div><b id="ch">--</b><span>ساعة</span></div>
+      <div><b id="cm">--</b><span>دقيقة</span></div>
+      <div><b id="cs">--</b><span>ثانية</span></div>
+    </div>
+  </div>
+
+  <div class="scene" id="scene">
+    <div class="tilt" id="tilt">
+      <img class="art" src="assets/hero-3d.png" alt="شعار NextStep AI ثلاثي الأبعاد على شكل درجات صاعدة">
+      <div class="chip c1"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.4 5.6L20 10l-5.6 2.4L12 18l-2.4-5.6L4 10l5.6-2.4z"/></svg>مهارات جديدة</div>
+      <div class="chip c2"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg>دخل جانبي</div>
+      <div class="chip c3"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M21 12h-3"/></svg>عمل حر</div>
+    </div>
+  </div>
+</div>
+</main>
+</div>
+
+<section id="details" class="alt">
+  <div class="wrap">
+    <h2 class="reveal">لماذا هذا اللقاء؟</h2>
+    <p class="sub reveal">المهارة التي تتعلمها اليوم قد تكون مصدر دخلك غدًا. في هذا اللقاء نتحدث بوضوح وواقعية عن الطريق.</p>
+    <div class="grid3">
+      <div class="card reveal">
+        <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.4 5.6L20 10l-5.6 2.4L12 18l-2.4-5.6L4 10l5.6-2.4z"/></svg></div>
+        <h3>مهارات موازية لتخصصك</h3>
+        <p>لماذا يحتاج كل طالب وخريج لمهارة إضافية بجانب تخصصه الأساسي.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8M15 7h6v6"/></svg></div>
+        <h3>بناء مصدر دخل جانبي</h3>
+        <p>خطوات عملية للبدء ببناء دخل إضافي في ظل التحديات الراهنة.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M21 12h-3"/></svg></div>
+        <h3>العمل الحر</h3>
+        <p>نظرة على العمل الحر كمسار يمكن البدء به أثناء الدراسة وبعدها.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="reveal">تفاصيل اللقاء</h2>
+    <div class="info reveal" style="margin-top:18px">
+      <div class="tile"><small>التاريخ</small><b>الأربعاء 14/10/2026</b></div>
+      <div class="tile"><small>الوقت</small><b>7:00 مساءً بتوقيت غزة</b></div>
+      <div class="tile"><small>المكان</small><b>إلكترونيًا عبر Meet أو Zoom</b></div>
+      <div class="tile"><small>الرسوم</small><b>مجاني للجميع</b></div>
+    </div>
+    <div class="speaker reveal">
+      <div class="avatar" aria-hidden="true">س</div>
+      <div>
+        <small style="color:var(--blue);font-weight:700">محاضِرة اللقاء</small>
+        <h3>د. سارة اللولو</h3>
+        <p>بكالوريوس طب وجراحة الفم والأسنان — معيدة سابقًا في جامعة الأزهر</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="register" class="alt">
+  <div class="wrap">
+    <div class="reg">
+      <div class="ticket-scene" id="tkScene">
+        <div class="ticket" id="ticket">
+          <div class="tk-top"><div style="display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px"><img src="assets/n-icon.png" alt="" style="height:38px;background:#fff;border-radius:10px;padding:4px"><span style="color:#fff;font-size:20px;letter-spacing:-.3px">NextStep <b style="color:#06B6D4">AI</b></span></div><span>EVENT PASS</span></div>
+          <div class="tk-label">اسم الحاضر</div>
+          <div class="tk-name ph" id="tkName">اسمك الثلاثي هنا</div>
+          <div class="tk-title">كيف أطوّر مهارات أحصل منها على دخل جانبي؟</div>
+          <div class="tk-meta">
+            <div><span>التاريخ</span>الأربعاء 14/10/2026</div>
+            <div><span>الوقت</span>7:00 مساءً (غزة)</div>
+            <div><span>المكان</span>أونلاين</div>
+            <div><span>الرسوم</span>مجاني</div>
+          </div>
+          <div class="stamp">تم التأكيد</div>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <div id="formBox">
+          <h2>سجّل حضورك</h2>
+          <p class="sub" style="font-size:16px;margin-bottom:14px">املأ بياناتك لنؤكد مقعدك. بعد التسجيل تنضم مباشرة لمجموعة المجتمع على واتساب حيث يصلك رابط اللقاء.</p>
+          <div class="prog"><i id="progBar"></i></div>
+          <div class="prog-t" id="progTxt">اكتمل 0 من 6</div>
+          <form id="regForm" novalidate>
+            <div class="hp" aria-hidden="true"><label>لا تملأ هذا الحقل<input type="text" name="website" id="website" tabindex="-1" autocomplete="off"></label></div>
+            <div class="field">
+              <label for="full_name">الاسم الثلاثي بالعربية <small>(كما سيظهر في الشهادة)</small></label>
+              <input id="full_name" name="full_name" type="text" autocomplete="name" required>
+              <div class="err" data-for="full_name"></div>
+            </div>
+            <div class="two">
+              <div class="field">
+                <label for="email">البريد الإلكتروني</label>
+                <input id="email" name="email" type="email" inputmode="email" autocomplete="email" dir="ltr" required>
+                <div class="err" data-for="email"></div>
+              </div>
+              <div class="field">
+                <label for="whatsapp">رقم الواتساب</label>
+                <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="05XXXXXXXX" required>
+                <div class="err" data-for="whatsapp"></div>
+              </div>
+            </div>
+            <div class="two">
+              <div class="field">
+                <label for="university">الجامعة / التخصص <small>(اختياري)</small></label>
+                <input id="university" name="university" type="text">
+              </div>
+              <div class="field">
+                <label for="source">كيف عرفت عن اللقاء؟</label>
+                <select id="source" name="source" required>
+                  <option value="">اختر...</option>
+                  <option>مجتمع NextStep AI</option>
+                  <option>مبادرة غرس</option>
+                  <option>صديق / زميل</option>
+                  <option>إنستغرام</option>
+                  <option>لينكدإن</option>
+                  <option>أخرى</option>
+                </select>
+                <div class="err" data-for="source"></div>
+              </div>
+            </div>
+            <label class="check"><input type="checkbox" id="confirm" required><span>أؤكد حضوري للقاء يوم الأربعاء 14/10/2026 الساعة 7:00 مساءً بتوقيت غزة، وسأوفّر إنترنت جيدًا وأفرّغ نفسي للمتابعة.</span></label>
+            <div class="err" data-for="confirm" style="margin-top:-8px;margin-bottom:10px"></div>
+            <button class="btn btn-primary mag" type="submit" id="submitBtn" style="width:100%">تأكيد التسجيل</button>
+            <div class="form-msg" id="formMsg" role="alert"></div>
+          </form>
+        </div>
+
+        <div class="success" id="success">
+          <div class="ok"><svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h2 id="okTitle">تم تسجيلك بنجاح</h2>
+          <p class="sub" id="okText">خطوة أخيرة: انضم لمجموعة مجتمع NextStep AI على واتساب، فمنها يصلك رابط اللقاء والتذكيرات.</p>
+          <a class="btn btn-wa" id="waBtn" target="_blank" rel="noopener">انضم لمجموعة الواتساب</a>
+          <div class="succ-row">
+            <button class="btn btn-ghost" type="button" id="calBtn" style="font-size:16px;padding:12px">أضف للتقويم</button>
+            <button class="btn btn-ghost" type="button" id="shareBtn" style="font-size:16px;padding:12px">شارك مع زميل</button>
+          </div>
+          <p class="note">نراك الأربعاء 14/10/2026 الساعة 7:00 مساءً بتوقيت غزة</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="founder reveal">
+    <div class="f-icon"><img src="assets/n-icon.png" alt="NextStep AI"></div>
+    <div>
+      <div class="f-name">م. أحمد الحايك</div>
+      <div class="f-role">مؤسس <b>NextStep AI</b></div>
+      <div class="f-slogan">Your Next Step. Smarter with AI.</div>
+    </div>
+    <a class="f-link" href="https://www.linkedin.com/in/ahmedalhayek" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.700V21h-4z"/></svg>
+      تواصل معي
+    </a>
+  </div>
+  <footer>
+    <img src="assets/logo.png" alt="NextStep AI">
+    <p>تنظيم مشترك: NextStep AI × مبادرة غرس</p>
+    <p style="margin-top:2px">&copy; 2026 NextStep AI</p>
+  </footer>
+</div>
+
+<div id="sticky"><a class="btn btn-primary" href="#register">سجّل حضورك الآن</a></div>
+
+<script>
+/* ===================== الإعدادات ===================== */
+const CONFIG = {
+  SUPABASE_URL: "PUT_YOUR_SUPABASE_URL_HERE",          // مثال: https://xxxx.supabase.co
+  SUPABASE_ANON_KEY: "PUT_YOUR_SUPABASE_ANON_KEY_HERE", // مفتاح anon (public) فقط
+  TABLE: "workshop_registrations",
+  WORKSHOP_ID: "ghars-2026-10-14",
+  WHATSAPP_URL: "https://chat.whatsapp.com/IpZHryYgfiU6OeeSNr2EoT?s=cl&p=a&mlu=4&ilr=4",
+  EVENT_TIME: "2026-10-14T19:00:00+03:00"
+};
+
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const touch = matchMedia('(pointer: coarse)').matches;
+
+/* ---------- scroll progress + sticky CTA ---------- */
+const bar = $('#bar');
+addEventListener('scroll', () => {
+  const h = document.documentElement;
+  bar.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+}, {passive:true});
+const sticky = $('#sticky');
+let regVisible = false;
+new IntersectionObserver(es => { regVisible = es[0].isIntersecting; updSticky(); }, {threshold:.15}).observe($('#register'));
+function updSticky(){ sticky.classList.toggle('show', scrollY > 500 && !regVisible); }
+addEventListener('scroll', updSticky, {passive:true});
+
+/* ---------- reveal ---------- */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+$$('.reveal').forEach((el,i) => { el.style.transitionDelay = (i%3)*90 + 'ms'; io.observe(el); });
+
+/* ---------- countdown ---------- */
+(function(){
+  const t = new Date(CONFIG.EVENT_TIME).getTime();
+  function tick(){
+    let diff = Math.max(0, t - Date.now());
+    const d = Math.floor(diff/864e5); diff%=864e5;
+    const h = Math.floor(diff/36e5); diff%=36e5;
+    const m = Math.floor(diff/6e4), s = Math.floor(diff%6e4/1e3);
+    $('#cd').textContent = d; $('#ch').textContent = String(h).padStart(2,'0');
+    $('#cm').textContent = String(m).padStart(2,'0'); $('#cs').textContent = String(s).padStart(2,'0');
+  }
+  tick(); setInterval(tick, 1000);
+})();
+
+/* ---------- interactive dot field (reacts to cursor) ---------- */
+(function(){
+  const c = $('#dots');
+  if (reduce || touch){ document.documentElement.classList.add('no-canvas'); c.remove(); return; }
+  const ctx = c.getContext('2d'); let W,H,dpr; const GAP = 34; let mx=-999,my=-999, raf=0;
+  function size(){ dpr = Math.min(devicePixelRatio||1,2); W=innerWidth; H=innerHeight; c.width=W*dpr; c.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); draw(); }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    for (let x=GAP/2; x<W; x+=GAP) for (let y=GAP/2; y<H; y+=GAP){
+      const dx=x-mx, dy=y-my, d=Math.sqrt(dx*dx+dy*dy), k=Math.max(0,1-d/170);
+      const r = 1.3 + k*3.2, a = .13 + k*.5;
+      ctx.beginPath(); ctx.arc(x - dx*k*.12, y - dy*k*.12, r, 0, 6.283);
+      ctx.fillStyle = `rgba(${Math.round(37-31*k)},${Math.round(99+83*k)},${Math.round(235-23*k)},${a})`; ctx.fill();
+    }
+  }
+  addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; if(!raf) raf=requestAnimationFrame(()=>{raf=0;draw()}); }, {passive:true});
+  addEventListener('resize', size); size();
+})();
+
+/* ---------- 3D tilt (hero + ticket + cards) ---------- */
+(function(){
+  if (reduce || touch) return;
+  function bind(host, el, max, glow){
+    host.addEventListener('mousemove', e=>{
+      const r = host.getBoundingClientRect();
+      const x = (e.clientX - r.left)/r.width - .5, y = (e.clientY - r.top)/r.height - .5;
+      el.style.transform = `rotateY(${(-x*max).toFixed(2)}deg) rotateX(${(y*max).toFixed(2)}deg)`;
+      if (glow){ el.style.setProperty('--tx', (x+.5)*100+'%'); el.style.setProperty('--ty', (y+.5)*100+'%'); }
+    });
+    host.addEventListener('mouseleave', ()=>{ el.style.transform=''; });
+  }
+  bind($('#scene'), $('#tilt'), 18);
+  bind($('#tkScene'), $('#ticket'), 14, true);
+  $$('.card').forEach(c => {
+    c.addEventListener('mousemove', e=>{
+      const r = c.getBoundingClientRect();
+      const x=(e.clientX-r.left)/r.width, y=(e.clientY-r.top)/r.height;
+      c.style.setProperty('--mx', x*100+'%'); c.style.setProperty('--my', y*100+'%');
+      c.style.transform = `rotateY(${((.5-x)*10).toFixed(2)}deg) rotateX(${((y-.5)*10).toFixed(2)}deg) translateY(-4px)`;
+    });
+    c.addEventListener('mouseleave', ()=>{ c.style.transform=''; });
+  });
+  /* magnetic buttons */
+  $$('.mag').forEach(b => {
+    b.addEventListener('mousemove', e=>{
+      const r=b.getBoundingClientRect();
+      b.style.transform = `translate(${((e.clientX-r.left-r.width/2)*.18).toFixed(1)}px,${((e.clientY-r.top-r.height/2)*.28).toFixed(1)}px)`;
+    });
+    b.addEventListener('mouseleave', ()=>{ b.style.transform=''; });
+  });
+})();
+
+/* ---------- form ---------- */
+const form = $('#regForm'), msg = $('#formMsg'), btn = $('#submitBtn');
+const F = {name:$('#full_name'), email:$('#email'), phone:$('#whatsapp'), uni:$('#university'), src:$('#source'), conf:$('#confirm')};
+const setErr = (id, text) => {
+  const e = document.querySelector(`.err[data-for="${id}"]`); if (e) e.textContent = text || '';
+  const f = document.getElementById(id); if (f && f.type !== 'checkbox') f.classList.toggle('bad', !!text);
+};
+const normPhone = v => v.replace(/[\s\-()]/g,'').replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d));
+const cleanName = () => F.name.value.trim().replace(/\s+/g,' ');
+const okName = () => { const n = cleanName(); return n.split(' ').length >= 3 && n.length >= 8; };
+const okEmail = () => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(F.email.value.trim());
+const okPhone = () => /^\+?\d{9,15}$/.test(normPhone(F.phone.value));
+
+function validate(){
+  let ok = true;
+  if (!okName()){ setErr('full_name','اكتب اسمك الثلاثي كاملًا'); ok=false } else setErr('full_name');
+  if (!okEmail()){ setErr('email','أدخل بريدًا إلكترونيًا صحيحًا'); ok=false } else setErr('email');
+  if (!okPhone()){ setErr('whatsapp','أدخل رقم واتساب صحيحًا'); ok=false } else setErr('whatsapp');
+  if (!F.src.value){ setErr('source','اختر خيارًا'); ok=false } else setErr('source');
+  if (!F.conf.checked){ setErr('confirm','يجب تأكيد الحضور للمتابعة'); ok=false } else setErr('confirm');
+  return ok;
+}
+
+/* live progress + ticket preview */
+function progress(){
+  const done = [okName(), okEmail(), okPhone(), !!F.src.value, F.conf.checked, F.uni.value.trim().length>1].filter(Boolean).length;
+  $('#progBar').style.width = (done/6*100)+'%';
+  $('#progTxt').textContent = `اكتمل ${done} من 6`;
+}
+function preview(){
+  const n = cleanName(), el = $('#tkName');
+  el.textContent = n || 'اسمك الثلاثي هنا'; el.classList.toggle('ph', !n);
+}
+form.querySelectorAll('input,select').forEach(el => el.addEventListener('input', () => {
+  if (el.id) setErr(el.id); preview(); progress();
+}));
+F.src.addEventListener('change', progress); F.conf.addEventListener('change', progress);
+
+/* confetti */
+function confetti(){
+  if (reduce) return;
+  const c = $('#cv'), x = c.getContext('2d'); c.width = innerWidth; c.height = innerHeight;
+  const cols = ['#2563EB','#06B6D4','#10B981','#0B1220','#7FB0FF'];
+  const ps = Array.from({length:150}, () => ({x:innerWidth/2+(Math.random()-.5)*220, y:innerHeight*.55, vx:(Math.random()-.5)*16, vy:-Math.random()*16-6, s:Math.random()*8+4, r:Math.random()*6, vr:(Math.random()-.5)*.4, c:cols[Math.random()*cols.length|0]}));
+  let f = 0;
+  (function step(){
+    x.clearRect(0,0,c.width,c.height);
+    ps.forEach(p => { p.vy += .42; p.x += p.vx; p.y += p.vy; p.r += p.vr; x.save(); x.translate(p.x,p.y); x.rotate(p.r); x.fillStyle=p.c; x.fillRect(-p.s/2,-p.s/4,p.s,p.s/2); x.restore(); });
+    if (++f < 170) requestAnimationFrame(step); else x.clearRect(0,0,c.width,c.height);
+  })();
+}
+
+function showSuccess(already){
+  $('#formBox').style.display='none';
+  $('#success').style.display='block';
+  $('#waBtn').href = CONFIG.WHATSAPP_URL;
+  $('#ticket').classList.add('done');
+  if (already){
+    $('#okTitle').textContent = 'أنت مسجّل مسبقًا';
+    $('#okText').textContent = 'بياناتك محفوظة لدينا. إن لم تنضم بعد لمجموعة الواتساب فانضم من الزر أدناه.';
+  } else confetti();
+  $('#register').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+form.addEventListener('submit', async e => {
+  e.preventDefault(); msg.textContent='';
+  if ($('#website').value) return;                 // honeypot
+  if (!validate()) return;
+  if (CONFIG.SUPABASE_URL.startsWith('PUT_')){ msg.textContent='لم يتم ربط قاعدة البيانات بعد (إعدادات Supabase).'; return; }
+  btn.disabled = true; btn.textContent = 'جارٍ التسجيل...';
+  const payload = {
+    workshop: CONFIG.WORKSHOP_ID,
+    full_name: cleanName(),
+    email: F.email.value.trim().toLowerCase(),
+    whatsapp: normPhone(F.phone.value),
+    university: F.uni.value.trim() || null,
+    source: F.src.value
+  };
+  try{
+    const res = await fetch(`${CONFIG.SUPABASE_URL}/rest/v1/${CONFIG.TABLE}`, {
+      method:'POST',
+      headers:{'Content-Type':'application/json', apikey:CONFIG.SUPABASE_ANON_KEY, Authorization:`Bearer ${CONFIG.SUPABASE_ANON_KEY}`, Prefer:'return=minimal'},
+      body: JSON.stringify(payload)
+    });
+    if (res.ok) showSuccess(false);
+    else if (res.status === 409) showSuccess(true);
+    else msg.textContent='تعذّر التسجيل الآن، حاول مرة أخرى بعد قليل.';
+  }catch(err){
+    msg.textContent='تحقق من اتصالك بالإنترنت وحاول مرة أخرى.';
+  }finally{
+    btn.disabled=false; btn.textContent='تأكيد التسجيل';
+  }
+});
+
+/* ---------- calendar + share ---------- */
+$('#calBtn').addEventListener('click', () => {
+  const ics = ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//NextStep AI//Workshop//AR','BEGIN:VEVENT',
+    'UID:ghars-2026-10-14@nextstep-ai','DTSTAMP:20261012T000000Z','DTSTART:20261014T160000Z','DTEND:20261014T173000Z',
+    'SUMMARY:كيف أطوّر مهارات أحصل منها على دخل جانبي؟ (غرس × NextStep AI)',
+    'DESCRIPTION:لقاء أونلاين مجاني مع د. سارة اللولو. رابط اللقاء يصل عبر مجموعة الواتساب.',
+    'BEGIN:VALARM','TRIGGER:-PT30M','ACTION:DISPLAY','DESCRIPTION:يبدأ اللقاء بعد 30 دقيقة','END:VALARM',
+    'END:VEVENT','END:VCALENDAR'].join('\r\n');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([ics], {type:'text/calendar;charset=utf-8'}));
+  a.download = 'ghars-workshop.ics'; document.body.appendChild(a); a.click(); a.remove();
+});
+$('#shareBtn').addEventListener('click', async () => {
+  const data = {title:'ورشة: كيف أطوّر مهارات أحصل منها على دخل جانبي؟', text:'لقاء مجاني الأربعاء 14/10/2026 — سجّل معي:', url:location.href.split('#')[0]};
+  try{ if (navigator.share) await navigator.share(data); else { await navigator.clipboard.writeText(data.url); $('#shareBtn').textContent='تم نسخ الرابط'; } }catch(e){}
+});
+</script>
+</body>
+</html>
